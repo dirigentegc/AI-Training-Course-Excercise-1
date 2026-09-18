@@ -1,0 +1,7 @@
+# File del corso, non fanno parte del sito: restano solo sul tuo computer
+*.pdf
+
+# File creati automaticamente da Windows / dagli editor
+Thumbs.db
+desktop.ini
+.DS_Store
