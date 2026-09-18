@@ -1,0 +1,84 @@
+# ============================================================
+#  TESTI DEL SITO
+# ============================================================
+#  Questo file contiene TUTTE le parole che si vedono sul sito.
+#  Per cambiare il sito ti basta cambiare il testo qui sotto e salvare:
+#  non devi toccare nessun altro file.
+#
+#  Come funziona:
+#  - le righe che iniziano con il cancelletto #  sono note per te
+#    e NON compaiono sul sito;
+#  - un titolo fra parentesi quadre, come [Vision], apre una sezione;
+#  - il testo scritto sotto quel titolo finisce dentro quella sezione;
+#  - una riga vuota manda a capo e crea un nuovo paragrafo;
+#  - una riga che inizia con un trattino e uno spazio ( - ) diventa
+#    un elenco puntato;
+#  - l'ordine delle sezioni qui sotto e' anche l'ordine sulla pagina:
+#    se sposti una sezione, si sposta anche sul sito;
+#  - puoi aggiungere una sezione nuova: scrivi un titolo fra parentesi
+#    quadre e il testo sotto, comparira' da sola.
+#
+#  Attenzione: il sito e' pubblico. Non scrivere qui dentro dati
+#  personali reali di studenti (nomi, foto, voti, situazioni familiari).
+# ============================================================
+
+
+[Nome]
+Giovanni Coppola
+
+[Ruolo]
+Dirigente scolastico
+
+[Motto]
+Il polo culturale di riferimento della Val Messa.
+
+
+[Chi sono]
+Sono Giovanni Coppola e dirigo l'Istituto Comprensivo di Almese.
+
+Sono dirigente scolastico da cinque anni. Prima di assumere la dirigenza ho
+insegnato discipline tecniche di area meccanica: una provenienza che continua
+a orientare il mio modo di guardare la scuola.
+
+
+[L'istituto]
+L'Istituto Comprensivo di Almese, in provincia di Torino, riunisce otto plessi
+distribuiti nei comuni di Almese, Rubiana e Villar Dora:
+
+- due scuole dell'infanzia
+- cinque scuole primarie
+- una scuola secondaria di primo grado
+
+In Val Messa l'istituto e' conosciuto per l'elevata qualificazione del corpo
+docente e per le innovazioni didattiche, in particolare nell'ambito
+dell'inclusione e delle tecnologie informatiche.
+
+
+[Vision]
+Il polo culturale di riferimento della Val Messa.
+
+
+[Mission]
+I due impegni che la scuola si prende verso studenti e famiglie sono:
+
+- l'accoglienza
+- la valorizzazione dei talenti
+
+Per raggiungere questi obiettivi puntiamo sulla formazione.
+
+Ci caratterizza un sistema di relazioni a legami deboli, che apre finestre
+e opportunita'.
+
+
+# --- CONTATTI ------------------------------------------------
+#  Qui ogni riga va scritta cosi':   Etichetta: valore
+#  Le righe senza valore NON compaiono sul sito: puoi lasciarle
+#  vuote adesso e riempirle quando hai il dato sottomano.
+#  Email, telefono e sito diventano automaticamente cliccabili.
+# -------------------------------------------------------------
+
+[Contatti]
+Email: dirigente@comprensivoalmese.it
+Sede: Piazza della Fiera 3/2
+Telefono:
+Sito:

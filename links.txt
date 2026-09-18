@@ -1,0 +1,17 @@
+# ============================================================
+#  MATERIALI E COLLEGAMENTI
+# ============================================================
+#  Un link per riga, sempre in questo formato:
+#
+#      Titolo del link | indirizzo
+#
+#  Il titolo e l'indirizzo vanno separati dalla barra verticale |
+#  (si scrive con AltGr + il tasto della barra, vicino a Invio).
+#
+#  Esempio (togli il cancelletto all'inizio per farlo comparire):
+#  Sito dell'Istituto Comprensivo di Almese | https://www.comprensivoalmese.edu.it
+#
+#  Le righe che iniziano con # sono note e non compaiono sul sito.
+#  Se qui non c'e' nessun link, la sezione "Materiali" resta nascosta.
+# ============================================================
+
