@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--
+  Pagina personale del Dirigente scolastico.
+  I TESTI NON STANNO QUI: stanno nel file contenuti.txt (e i link in links.txt).
+  Per cambiare le parole del sito modifica quei due file, non questo.
+-->
+<html lang="it" data-tema="scuro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dirigente scolastico</title>
+  <meta name="description" content="Pagina personale del Dirigente scolastico dell'Istituto Comprensivo di Almese.">
+  <link rel="stylesheet" href="css/stile.css">
+</head>
+<body>
+
+  <a class="salta-al-contenuto" href="#contenuto">Vai al contenuto</a>
+
+  <header class="testata">
+    <div class="impaginato testata__interno">
+
+      <button id="pulsante-tema" class="pulsante-tema" type="button" aria-live="polite">
+        <span aria-hidden="true">&#9728;</span> <span id="etichetta-tema">Tema chiaro</span>
+      </button>
+
+      <p class="testata__ruolo" id="ruolo"></p>
+      <h1 class="testata__nome" id="nome"></h1>
+      <p class="testata__motto" id="motto"></p>
+
+    </div>
+
+    <!-- Profilo di montagna: richiama la valle in cui si trova l'istituto -->
+    <svg class="crinale" viewBox="0 0 1200 130" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+      <polygon class="crinale__lontano" points="0,130 0,72 130,44 265,88 420,26 565,78 705,38 860,84 1000,48 1120,78 1200,58 1200,130"/>
+      <polygon class="crinale__vicino"  points="0,130 0,98 150,72 320,104 470,66 640,98 800,62 960,102 1120,74 1200,92 1200,130"/>
+    </svg>
+  </header>
+
+  <main class="impaginato" id="contenuto">
+
+    <p class="avviso" id="avviso" hidden></p>
+
+    <!-- Le sezioni qui sotto vengono costruite leggendo contenuti.txt -->
+    <div id="sezioni"></div>
+
+    <section class="sezione sezione--contatti" id="sezione-contatti" hidden>
+      <h2>Contatti</h2>
+      <ul class="contatti" id="elenco-contatti"></ul>
+    </section>
+
+    <section class="sezione sezione--materiali" id="sezione-materiali" hidden>
+      <h2>Materiali</h2>
+      <ul class="materiali" id="elenco-materiali"></ul>
+    </section>
+
+  </main>
+
+  <footer class="pieddipagina">
+    <p class="impaginato" id="pieddipagina-testo"></p>
+  </footer>
+
+  <script src="js/sito.js"></script>
+</body>
+</html>

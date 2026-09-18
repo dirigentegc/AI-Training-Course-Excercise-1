@@ -1,0 +1,275 @@
+/* ==========================================================
+   Aspetto grafico del sito - tema "montagna e territorio"
+   Verdi profondi e grigio pietra, ispirati alla valle.
+   I colori sono raccolti qui sotto: per cambiarli basta
+   modificare questi valori.
+   ========================================================== */
+
+/* --- Colori del tema SCURO (quello di partenza) --- */
+:root {
+  --sfondo:        #0f1512;
+  --sfondo-rialzo: #18211c;
+  --testo:         #e7ece7;
+  --testo-tenue:   #a2b0a5;
+  --accento:       #86bd92;
+  --accento-forte: #a9d6b2;
+  --bordo:         rgba(230, 240, 232, 0.14);
+  --pietra:        #2b3530;
+  --ombra:         rgba(0, 0, 0, 0.45);
+}
+
+/* --- Colori del tema CHIARO --- */
+html[data-tema="chiaro"] {
+  --sfondo:        #f5f4ef;
+  --sfondo-rialzo: #ffffff;
+  --testo:         #1b241e;
+  --testo-tenue:   #54605a;
+  --accento:       #2e6b43;
+  --accento-forte: #1f4c2f;
+  --bordo:         rgba(27, 36, 30, 0.14);
+  --pietra:        #d9d6cd;
+  --ombra:         rgba(27, 36, 30, 0.10);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--sfondo);
+  color: var(--testo);
+  font-family: "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Larghezza comoda da leggere, con margini laterali sul telefono */
+.impaginato {
+  width: 100%;
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+/* Link per chi naviga con la tastiera: compare solo quando serve */
+.salta-al-contenuto {
+  position: absolute;
+  left: -9999px;
+}
+.salta-al-contenuto:focus {
+  left: 1rem;
+  top: 1rem;
+  z-index: 10;
+  background: var(--sfondo-rialzo);
+  color: var(--testo);
+  padding: 0.6rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--accento);
+}
+
+/* ---------------- Testata ---------------- */
+
+.testata {
+  position: relative;
+  padding-top: 3.5rem;
+  background:
+    radial-gradient(120% 90% at 20% 0%, var(--pietra) 0%, transparent 60%),
+    var(--sfondo);
+  overflow: hidden;
+}
+
+.testata__interno {
+  position: relative;
+  padding-bottom: 5.5rem;
+}
+
+.testata__ruolo {
+  margin: 0 0 0.35rem;
+  color: var(--accento);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.testata__nome {
+  margin: 0;
+  font-size: clamp(2.2rem, 8vw, 3.6rem);
+  line-height: 1.08;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.testata__motto {
+  margin: 1.1rem 0 0;
+  padding-left: 1rem;
+  border-left: 3px solid var(--accento);
+  max-width: 34rem;
+  color: var(--testo-tenue);
+  font-size: clamp(1.05rem, 3.6vw, 1.3rem);
+  font-style: italic;
+}
+
+/* Profilo di montagna in fondo alla testata */
+.crinale {
+  display: block;
+  width: 100%;
+  height: 8rem;
+  margin-bottom: -1px;
+}
+.crinale__lontano { fill: var(--pietra); opacity: 0.75; }
+.crinale__vicino  { fill: var(--sfondo-rialzo); }
+
+/* ---------------- Sezioni ---------------- */
+
+main {
+  padding-top: 2.5rem;
+  padding-bottom: 3rem;
+  background: var(--sfondo-rialzo);
+}
+
+.sezione {
+  margin: 0 0 2.75rem;
+}
+
+.sezione h2 {
+  margin: 0 0 0.9rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+/* Piccolo trattino verde davanti a ogni titolo di sezione */
+.sezione h2::before {
+  content: "";
+  display: inline-block;
+  width: 1.6rem;
+  height: 3px;
+  margin-right: 0.7rem;
+  vertical-align: 0.3em;
+  background: var(--accento);
+  border-radius: 2px;
+}
+
+.sezione p {
+  margin: 0 0 1rem;
+}
+
+.sezione ul {
+  margin: 0 0 1rem;
+  padding-left: 0;
+  list-style: none;
+}
+
+.sezione ul li {
+  position: relative;
+  padding-left: 1.4rem;
+  margin-bottom: 0.4rem;
+}
+
+.sezione ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.72em;
+  width: 0.5rem;
+  height: 0.5rem;
+  background: var(--accento);
+  border-radius: 50%;
+}
+
+/* ---------------- Contatti e materiali ---------------- */
+
+.contatti,
+.materiali {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contatti li,
+.materiali li {
+  padding: 0.85rem 0;
+  border-top: 1px solid var(--bordo);
+}
+.contatti li:last-child,
+.materiali li:last-child {
+  border-bottom: 1px solid var(--bordo);
+}
+
+.contatti__etichetta {
+  display: block;
+  color: var(--testo-tenue);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+a {
+  color: var(--accento-forte);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+  overflow-wrap: anywhere;
+}
+a:hover { color: var(--accento); }
+
+:focus-visible {
+  outline: 2px solid var(--accento);
+  outline-offset: 3px;
+  border-radius: 0.3rem;
+}
+
+/* ---------------- Pulsante del tema ---------------- */
+
+.pulsante-tema {
+  position: absolute;
+  top: -2.1rem;
+  right: 1.25rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 0.9rem;
+  background: var(--sfondo-rialzo);
+  color: var(--testo);
+  border: 1px solid var(--bordo);
+  border-radius: 999px;
+  font: inherit;
+  font-size: 0.85rem;
+  cursor: pointer;
+  box-shadow: 0 2px 10px var(--ombra);
+}
+.pulsante-tema:hover { border-color: var(--accento); }
+
+/* ---------------- Avviso di errore ---------------- */
+
+.avviso {
+  margin: 0 0 2rem;
+  padding: 1rem 1.1rem;
+  background: var(--sfondo);
+  border: 1px solid var(--accento);
+  border-radius: 0.6rem;
+  color: var(--testo);
+}
+
+/* ---------------- Pie' di pagina ---------------- */
+
+.pieddipagina {
+  padding: 1.75rem 0 2.5rem;
+  background: var(--sfondo-rialzo);
+  border-top: 1px solid var(--bordo);
+  color: var(--testo-tenue);
+  font-size: 0.85rem;
+}
+.pieddipagina p { margin: 0; }
+
+/* Su schermi grandi la testata respira un po' di piu' */
+@media (min-width: 48rem) {
+  .testata { padding-top: 5rem; }
+  main { padding-top: 3.5rem; }
+}
+
+/* Rispetta chi ha chiesto meno animazioni */
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; }
+}
